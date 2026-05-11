@@ -1,0 +1,117 @@
+/* 1. ALL IMPORTS MUST BE AT THE TOP */
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@300;400&display=swap");
+
+/* 2. THEME DEFINITION (Tailwind v4 style) */
+@theme {
+  --color-idex-teal: #00ffd5;
+  --color-idex-black: #0a0a0a;
+  --color-menu-bg: #161616;
+
+  /* High-end typography */
+  --font-sans: "Instrument Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* 3. BASE STYLES */
+:root {
+  background-color: var(--color-idex-black);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  line-height: 1.5;
+  /* Re-enable the normal system arrow */
+  cursor: default !important;
+}
+
+/* 4. THE STROKE TEXT EFFECT (Consistent across Name, Projects, and Menu) */
+.stroke-text {
+  -webkit-text-stroke: 1.2px rgba(255, 255, 255, 0.2);
+  color: transparent;
+  transition:
+    -webkit-text-stroke 0.5s ease,
+    color 0.5s ease,
+    text-shadow 0.5s ease;
+}
+
+/* This applies when you hover directly or when we trigger it in the menu */
+.stroke-text:hover,
+a:hover .stroke-text {
+  -webkit-text-stroke: 1.2px var(--color-idex-teal);
+  text-shadow: 0 0 15px rgba(0, 255, 213, 0.3);
+}
+
+/* 5. INTERACTIVE ELEMENTS */
+/* Show the standard Hand Pointer on all clickable items */
+a,
+button,
+input,
+textarea,
+.menu-link {
+  cursor: pointer !important;
+}
+
+/* Ensure our custom glowing point doesn't block clicks */
+#custom-cursor {
+  pointer-events: none !important;
+}
+
+/* 6. CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-idex-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-idex-teal);
+}
+
+/* 7. TEXT SELECTION */
+::selection {
+  background-color: var(--color-idex-teal);
+  color: black;
+}
+
+/* 8. NOISE TEXTURE */
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.02;
+  z-index: 9998;
+  pointer-events: none;
+  background-image: url("https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+}
+
+/* 9. SMOOTH SCROLLING PREP (Lenis) */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
