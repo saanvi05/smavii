@@ -62,8 +62,9 @@ const About = () => {
           </div>
 
           <motion.a
-            href="/Saanvi_Sahoo_Resume.pdf"
-            download="Saanvi_Sahoo_Resume.pdf"
+            href="/Saanvi_Smakshi Sahoo Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             className="group flex items-center gap-4 cursor-pointer pb-2 border-b border-white/10 hover:border-idex-teal transition-colors"
