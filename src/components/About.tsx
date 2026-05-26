@@ -81,7 +81,7 @@ const About = () => {
         {/* MAIN CONTENT GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start relative">
           {/* LEFT SIDE: STICKY IMAGE */}
-          <div className="lg:col-span-4 sticky top-32 self-start">
+         <div className="lg:col-span-4 lg:sticky lg:top-32 self-start">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
