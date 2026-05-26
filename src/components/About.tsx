@@ -62,7 +62,7 @@ const About = () => {
           </div>
 
           <motion.a
-            href="/Saanvi_Smakshi Sahoo Resume.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0 }}
