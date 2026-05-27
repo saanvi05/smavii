@@ -96,7 +96,7 @@ const About = () => {
             </motion.div>
             {/* Added a subtle label below sticky image to fill space beautifully */}
             <p className="mt-6 text-white/10 font-mono text-[10px] uppercase tracking-[0.5em]">
-              Bhubaneswar, India • 2026
+              Bengaluru, India • 2026
             </p>
           </div>
 
