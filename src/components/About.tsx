@@ -33,7 +33,7 @@ const About = () => {
     {
       degree: "B.Tech",
       institution: "Silicon Institute of Technology, Bhubaneswar",
-      period: "2019 — 2024",
+      period: "2019 — 2023",
       desc: "Graduated with a specialization in Electronics and Instrumentation Engineering.",
       cgpa: "CGPA: 7.9/10"
     },
