@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/smavii.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 1. Primary Meta Tags (This is what Google reads) -->
+    <!-- 1. Primary Meta Tags -->
     <title>
       Saanvi Smakshi Sahoo | Smavii — UI/UX Designer & Frontend Developer
     </title>
@@ -24,7 +24,7 @@
     <meta name="author" content="Saanvi Smakshi Sahoo" />
     <meta name="robots" content="index, follow" />
 
-    <!-- 2. Open Graph / Facebook (How your link looks when shared on LinkedIn/WhatsApp) -->
+    <!-- 2. Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
@@ -39,7 +39,9 @@
       content="Explore the creative works and technical expertise of Saanvi Smakshi Sahoo"
     />
     <meta property="og:image" content="/smavii.jpg" />
-    <!-- Place an image named og-preview.jpg in your public folder -->
+
+    <!-- ADDED THIS: Tells social media the site's brand name -->
+    <meta property="og:site_name" content="Smavii" />
 
     <!-- 3. Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -53,12 +55,21 @@
       content="https://smavii.saanvismakshisahoo.workers.dev/smavii.jpg"
     />
 
-    <!-- 4. Theme Color for Mobile Browsers -->
+    <!-- 4. Theme Color -->
     <meta name="theme-color" content="#0a0a0a" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Smavii",
+        "alternateName": ["Saanvi Smakshi Sahoo", "Smavii Design Studio"],
+        "url": "https://smavii.saanvismakshisahoo.workers.dev/"
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <!-- 5. No-Script Fallback for SEO -->
     <noscript>
       <h1>Saanvi Smakshi Sahoo | Smavii Portfolio</h1>
       <p>
